@@ -6,8 +6,10 @@
 //  Copyright © 2015 Treehouse. All rights reserved.
 //
 
-import GameKit
+//import GameKit
 import UIKit
+//import Foundation
+
 
 struct FactModel {
     let facts =  [
@@ -24,22 +26,14 @@ struct FactModel {
         "Take my hand & we will get through this together."
     ]
     
-
+//
     func getRandomFact() -> String {
         //if dupeCheck == true {
-        let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(facts.count)
-        
+        //let randomNumber = GKRandomSource.
+        //GKRandomSource.sharedRandom().nextIntWithUpperBound(facts.count)
+        let randomNumber = 1
         return facts[randomNumber]
     }
 
 }
-
-
-
-
-
-
-
-
-
 

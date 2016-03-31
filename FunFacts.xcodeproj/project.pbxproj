@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304D95D21CA62845002F00B2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304D95D01CA62845002F00B2 /* Interface.storyboard */; };
+		304D95D41CA62845002F00B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304D95D31CA62845002F00B2 /* Assets.xcassets */; };
+		304D95DB1CA62845002F00B2 /* FunFacts Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 304D95DA1CA62845002F00B2 /* FunFacts Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		304D95E21CA62845002F00B2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D95E11CA62845002F00B2 /* InterfaceController.swift */; };
+		304D95E41CA62845002F00B2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D95E31CA62845002F00B2 /* ExtensionDelegate.swift */; };
+		304D95E61CA62845002F00B2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D95E51CA62845002F00B2 /* NotificationController.swift */; };
+		304D95E81CA62845002F00B2 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D95E71CA62845002F00B2 /* GlanceController.swift */; };
+		304D95EA1CA62845002F00B2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D95E91CA62845002F00B2 /* ComplicationController.swift */; };
+		304D95EC1CA62845002F00B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304D95EB1CA62845002F00B2 /* Assets.xcassets */; };
+		304D95F01CA62845002F00B2 /* FunFacts Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 304D95CE1CA62844002F00B2 /* FunFacts Watch.app */; };
+		30C441441CA8A60600E8EA5A /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C441431CA8A60600E8EA5A /* FactModel.swift */; };
 		30D20AE81C6C01240057232C /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D20AE71C6C01240057232C /* FactModel.swift */; };
 		CDA9563E1BD9329E00CB9023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA9563D1BD9329E00CB9023 /* AppDelegate.swift */; };
 		CDA956401BD9329E00CB9023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA9563F1BD9329E00CB9023 /* ViewController.swift */; };
@@ -14,9 +25,67 @@
 		CDA956451BD9329E00CB9023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA956441BD9329E00CB9023 /* Assets.xcassets */; };
 		CDA956481BD9329E00CB9023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA956461BD9329E00CB9023 /* LaunchScreen.storyboard */; };
 		CDA956521BDD6A3900CB9023 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA956511BDD6A3900CB9023 /* ColorModel.swift */; };
+		F6C23513987BC9F7BB192C25 /* UIColorConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2389FA9D420ABA7F46754 /* UIColorConversion.swift */; };
+		F6C2362232E82482EEAB5E7F /* UIColorConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C2389FA9D420ABA7F46754 /* UIColorConversion.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		304D95DC1CA62845002F00B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDA956321BD9329D00CB9023 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304D95D91CA62845002F00B2;
+			remoteInfo = "FunFacts Watch Extension";
+		};
+		304D95EE1CA62845002F00B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDA956321BD9329D00CB9023 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304D95CD1CA62844002F00B2;
+			remoteInfo = "FunFacts Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		304D95F41CA62845002F00B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				304D95DB1CA62845002F00B2 /* FunFacts Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304D95F81CA62845002F00B2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				304D95F01CA62845002F00B2 /* FunFacts Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		304D95CE1CA62844002F00B2 /* FunFacts Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FunFacts Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		304D95D11CA62845002F00B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		304D95D31CA62845002F00B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		304D95D51CA62845002F00B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304D95DA1CA62845002F00B2 /* FunFacts Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FunFacts Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		304D95E01CA62845002F00B2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		304D95E11CA62845002F00B2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		304D95E31CA62845002F00B2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		304D95E51CA62845002F00B2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		304D95E71CA62845002F00B2 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		304D95E91CA62845002F00B2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		304D95EB1CA62845002F00B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		304D95ED1CA62845002F00B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C441431CA8A60600E8EA5A /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FactModel.swift; path = "FunFacts Watch Extension/FactModel.swift"; sourceTree = SOURCE_ROOT; };
 		30D20AE71C6C01240057232C /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
 		CDA9563A1BD9329E00CB9023 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA9563D1BD9329E00CB9023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,9 +95,17 @@
 		CDA956471BD9329E00CB9023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDA956491BD9329E00CB9023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDA956511BDD6A3900CB9023 /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
+		F6C2389FA9D420ABA7F46754 /* UIColorConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorConversion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		304D95D71CA62845002F00B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDA956371BD9329E00CB9023 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +116,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		304D95CF1CA62844002F00B2 /* FunFacts Watch */ = {
+			isa = PBXGroup;
+			children = (
+				304D95D01CA62845002F00B2 /* Interface.storyboard */,
+				304D95D31CA62845002F00B2 /* Assets.xcassets */,
+				304D95D51CA62845002F00B2 /* Info.plist */,
+			);
+			path = "FunFacts Watch";
+			sourceTree = "<group>";
+		};
+		304D95DE1CA62845002F00B2 /* FunFacts Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				30C441431CA8A60600E8EA5A /* FactModel.swift */,
+				304D95E11CA62845002F00B2 /* InterfaceController.swift */,
+				304D95E31CA62845002F00B2 /* ExtensionDelegate.swift */,
+				304D95E51CA62845002F00B2 /* NotificationController.swift */,
+				304D95E71CA62845002F00B2 /* GlanceController.swift */,
+				304D95E91CA62845002F00B2 /* ComplicationController.swift */,
+				304D95EB1CA62845002F00B2 /* Assets.xcassets */,
+				304D95ED1CA62845002F00B2 /* Info.plist */,
+				304D95DF1CA62845002F00B2 /* Supporting Files */,
+			);
+			path = "FunFacts Watch Extension";
+			sourceTree = "<group>";
+		};
+		304D95DF1CA62845002F00B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				304D95E01CA62845002F00B2 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CDA956311BD9329D00CB9023 = {
 			isa = PBXGroup;
 			children = (
 				CDA9563C1BD9329E00CB9023 /* FunFacts */,
+				304D95CF1CA62844002F00B2 /* FunFacts Watch */,
+				304D95DE1CA62845002F00B2 /* FunFacts Watch Extension */,
 				CDA9563B1BD9329E00CB9023 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				CDA9563A1BD9329E00CB9023 /* FunFacts.app */,
+				304D95CE1CA62844002F00B2 /* FunFacts Watch.app */,
+				304D95DA1CA62845002F00B2 /* FunFacts Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +181,7 @@
 				CDA956461BD9329E00CB9023 /* LaunchScreen.storyboard */,
 				CDA956491BD9329E00CB9023 /* Info.plist */,
 				CDA956511BDD6A3900CB9023 /* ColorModel.swift */,
+				F6C2389FA9D420ABA7F46754 /* UIColorConversion.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -73,6 +189,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		304D95CD1CA62844002F00B2 /* FunFacts Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304D95F51CA62845002F00B2 /* Build configuration list for PBXNativeTarget "FunFacts Watch" */;
+			buildPhases = (
+				304D95CC1CA62844002F00B2 /* Resources */,
+				304D95F41CA62845002F00B2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				304D95DD1CA62845002F00B2 /* PBXTargetDependency */,
+			);
+			name = "FunFacts Watch";
+			productName = "FunFacts Watch";
+			productReference = 304D95CE1CA62844002F00B2 /* FunFacts Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		304D95D91CA62845002F00B2 /* FunFacts Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304D95F11CA62845002F00B2 /* Build configuration list for PBXNativeTarget "FunFacts Watch Extension" */;
+			buildPhases = (
+				304D95D61CA62845002F00B2 /* Sources */,
+				304D95D71CA62845002F00B2 /* Frameworks */,
+				304D95D81CA62845002F00B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FunFacts Watch Extension";
+			productName = "FunFacts Watch Extension";
+			productReference = 304D95DA1CA62845002F00B2 /* FunFacts Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		CDA956391BD9329E00CB9023 /* FunFacts */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDA9564C1BD9329E00CB9023 /* Build configuration list for PBXNativeTarget "FunFacts" */;
@@ -80,10 +230,12 @@
 				CDA956361BD9329E00CB9023 /* Sources */,
 				CDA956371BD9329E00CB9023 /* Frameworks */,
 				CDA956381BD9329E00CB9023 /* Resources */,
+				304D95F81CA62845002F00B2 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				304D95EF1CA62845002F00B2 /* PBXTargetDependency */,
 			);
 			name = FunFacts;
 			productName = FunFacts;
@@ -96,12 +248,20 @@
 		CDA956321BD9329D00CB9023 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Treehouse;
 				TargetAttributes = {
+					304D95CD1CA62844002F00B2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					304D95D91CA62845002F00B2 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = S579MWX55N;
+					};
 					CDA956391BD9329E00CB9023 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = S579MWX55N;
 					};
 				};
 			};
@@ -119,11 +279,30 @@
 			projectRoot = "";
 			targets = (
 				CDA956391BD9329E00CB9023 /* FunFacts */,
+				304D95CD1CA62844002F00B2 /* FunFacts Watch */,
+				304D95D91CA62845002F00B2 /* FunFacts Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		304D95CC1CA62844002F00B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304D95D41CA62845002F00B2 /* Assets.xcassets in Resources */,
+				304D95D21CA62845002F00B2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304D95D81CA62845002F00B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304D95EC1CA62845002F00B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDA956381BD9329E00CB9023 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +316,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		304D95D61CA62845002F00B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304D95E61CA62845002F00B2 /* NotificationController.swift in Sources */,
+				304D95E41CA62845002F00B2 /* ExtensionDelegate.swift in Sources */,
+				304D95EA1CA62845002F00B2 /* ComplicationController.swift in Sources */,
+				30C441441CA8A60600E8EA5A /* FactModel.swift in Sources */,
+				304D95E21CA62845002F00B2 /* InterfaceController.swift in Sources */,
+				304D95E81CA62845002F00B2 /* GlanceController.swift in Sources */,
+				F6C2362232E82482EEAB5E7F /* UIColorConversion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDA956361BD9329E00CB9023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,12 +338,34 @@
 				30D20AE81C6C01240057232C /* FactModel.swift in Sources */,
 				CDA9563E1BD9329E00CB9023 /* AppDelegate.swift in Sources */,
 				CDA956521BDD6A3900CB9023 /* ColorModel.swift in Sources */,
+				F6C23513987BC9F7BB192C25 /* UIColorConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		304D95DD1CA62845002F00B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 304D95D91CA62845002F00B2 /* FunFacts Watch Extension */;
+			targetProxy = 304D95DC1CA62845002F00B2 /* PBXContainerItemProxy */;
+		};
+		304D95EF1CA62845002F00B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 304D95CD1CA62844002F00B2 /* FunFacts Watch */;
+			targetProxy = 304D95EE1CA62845002F00B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		304D95D01CA62845002F00B2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304D95D11CA62845002F00B2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		CDA956411BD9329E00CB9023 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -170,6 +385,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		304D95F21CA62845002F00B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "FunFacts Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.FunFacts.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		304D95F31CA62845002F00B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "FunFacts Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.FunFacts.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		304D95F61CA62845002F00B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = FunFacts_Watch_Extension;
+				INFOPLIST_FILE = "FunFacts Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.FunFacts.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		304D95F71CA62845002F00B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = FunFacts_Watch_Extension;
+				INFOPLIST_FILE = "FunFacts Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.FunFacts.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		CDA9564A1BD9329E00CB9023 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -255,11 +536,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -267,17 +551,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		304D95F11CA62845002F00B2 /* Build configuration list for PBXNativeTarget "FunFacts Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304D95F21CA62845002F00B2 /* Debug */,
+				304D95F31CA62845002F00B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304D95F51CA62845002F00B2 /* Build configuration list for PBXNativeTarget "FunFacts Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304D95F61CA62845002F00B2 /* Debug */,
+				304D95F71CA62845002F00B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CDA956351BD9329D00CB9023 /* Build configuration list for PBXProject "FunFacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

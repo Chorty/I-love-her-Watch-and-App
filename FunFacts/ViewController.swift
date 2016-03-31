@@ -28,30 +28,53 @@ class ViewController: UIViewController {
 
  
     @IBAction func showFunFact() {
-        var randomColor = ColorModel().getRandomColor()
-        var randomFact = factModel.getRandomFact()
+        let randomColor = ColorModel().getRandomColor() //= funFactButton.tintColor
+        let randomFact: String = factModel.getRandomFact()
+        //randomFact = factModel.getRandomFact()
+        //let randomC = ColorModel().getRandomColor().toHexString()
+        //print(UIColor(hexString: randomColor.toHexString()))
+        //print(randomColor.toHexString())//.toHexString())
+        let viewBackC = funFactButton.tintColor.toHexString()
+        print(viewBackC)
+        print(randomColor.toHexString())
+        if randomColor.toHexString() == viewBackC {
+        print("color")
+            view.backgroundColor = ColorModel().getRandomColor()
+            funFactButton.tintColor = ColorModel().getRandomColor()
+
+            //    print(viewBackC)
+            
+            //print(UIColor(hexString: randomColor.toHexString()).toHexString())
+            //print(randomColor.toHexString())//randomColor = ColorModel().getRandomColor()
+            //showFunFact()
         
-        if (view.backgroundColor == randomColor) || (funFactLabel.text == randomFact) {
-            randomColor = ColorModel().getRandomColor()
-            randomFact = factModel.getRandomFact()
-            print("duplicates \(randomColor) or \(randomFact) Color")
-            view.backgroundColor = randomColor
-            funFactButton.tintColor = randomColor
-            funFactLabel.text = randomFact
-        } else {
-            print("duplicate")
+            //randomFact = factModel.getRandomFact()
+            //print(ColorModel().getRandomColor())
+            //view.backgroundColor = randomColor
+            //funFactButton.tintColor = randomColor
+            //funFactLabel.text = randomFact
             showFunFact()
+            //view.backgroundColor = randomColor
+            //funFactButton.tintColor = randomColor
+            funFactLabel.text = factModel.getRandomFact()
+        } else if funFactLabel.text == randomFact {
+            print("duplicate fact")
+            //showFunFact()
+            //view.backgroundColor = randomColor
+            //funFactButton.tintColor = randomColor
+            //funFactLabel.text = factModel.getRandomFact()
+            showFunFact()
+            
             view.backgroundColor = randomColor
             funFactButton.tintColor = randomColor
             funFactLabel.text = factModel.getRandomFact()
+        } else {
+            print("else")
             
+            
+            view.backgroundColor = randomColor
+            funFactButton.tintColor = randomColor
+            funFactLabel.text = factModel.getRandomFact()
         }
-        //view.backgroundColor = randomColor
-        //funFactButton.tintColor = randomColor
-        //funFactLabel.text = factModel.getRandomFact()
-        
-        //}
     }
 }
-
-
